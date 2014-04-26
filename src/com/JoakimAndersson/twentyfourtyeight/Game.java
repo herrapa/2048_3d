@@ -84,6 +84,8 @@ public class Game {
 		//glMatrixMode(GL_MODELVIEW);
 		GL11.glViewport(0, 0, WIDTH, HEIGHT);
 		GL11.glEnable(GL_DEPTH_TEST);
+		GL11.glEnable(GL_BLEND);
+		GL11.glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	}
 
 	private void exitGame() {
